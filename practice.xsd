@@ -1,0 +1,27 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Bibliography">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="row" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="Title"/>
+              <xs:element type="xs:string" name="Author"/>
+              <xs:element type="xs:short" name="Year"/>
+              <xs:element type="xs:string" name="Publication_Name"/>
+              <xs:element type="xs:string" name="DOI"/>
+              <xs:element type="xs:string" name="Date"/>
+              <xs:element type="xs:string" name="Journal_Name"/>
+              <xs:element type="xs:string" name="Journal_Volume"/>
+              <xs:element type="xs:string" name="Journal_Issue"/>
+              <xs:element type="xs:string" name="Conference_Name"/>
+              <xs:element type="xs:string" name="Conference_Location"/>
+              <xs:element type="xs:string" name="Book_Title"/>
+              <xs:element type="xs:string" name="Book_Editor"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
